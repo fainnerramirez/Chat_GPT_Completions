@@ -39,7 +39,7 @@ const ChatCompletion = () => {
     return (
         <Box height={'100vh'}>
             <VStack spacing={5} >
-                <HStack spacing={5} flexDir={{ base: 'column', md: 'column' }}>
+                <HStack spacing={5} flexDir={{ base: 'column', md: 'row' }}>
                     <Button rightIcon={<BiSolidDownload />} colorScheme='blue' onClick={handleChatToPDF}>Descargar como PDF</Button>
                     <Button as="a" href='https://github.com/fainnerramirez/Chat_GPT_Completions' target='_blank' leftIcon={<FaGithub />} rightIcon={<MdStarBorder />}>Estrellas en Github</Button>
                 </HStack>
