@@ -14,7 +14,7 @@ export const getResponseQuestion = async (question) => {
         model: "gpt-3.5-turbo",
         max_tokens: 1000,
         messages: [
-            { "role": "system", "content": "Eres un asistente útil que reponse de manera elegante y detallada" },
+            { "role": "system", "content": "Eres un asistente útil que responde de manera elegante, detallada y muy amigable " },
             { "role": "user", "content": question }
         ],
         stream: true,
