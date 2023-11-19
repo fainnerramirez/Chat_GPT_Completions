@@ -25,13 +25,13 @@ const Registers = () => {
     }
 
     return (
-        <HStack spacing={10} height={'100vh'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
+        <HStack spacing={10} height={'100vh'} display={'flex'} justifyContent={'center'} alignItems={'center'} flexDirection={{base: 'column', lg: 'row'}}>
             <Box>
                 <Heading color={'#6D8B74'} as='h1' size='4xl'>Chatify</Heading>
             </Box>
-            <Divider orientation='vertical' />
+            <Divider orientation={{base: 'horizontal', lg: 'vertical'}} />
             <Box>
-                <Text pt={5} pb={5} fontSize={'20px'} fontWeight={'bold'}>¡Explóralo hoy!</Text>
+                <Text pt={5} pb={5} fontSize={'20px'} fontWeight={'bold'} textAlign={{base: 'center', lg: 'left'}}>¡Explóralo hoy!</Text>
                 <Button leftIcon={<FcGoogle />} variant={'outline'} colorScheme='blue' onClick={handleGoogle}>Ingresa con Google</Button>
             </Box>
         </HStack>
