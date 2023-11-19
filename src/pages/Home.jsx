@@ -12,7 +12,7 @@ const Home = () => {
                 fontWeight='extrabold'
                 color={'#6D8B74'}
             >
-                Bienvenido a ChatFay
+                Bienvenido a ChatiFy
             </Text>
             <ChatCompletion />
         </Box>
