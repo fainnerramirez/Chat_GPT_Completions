@@ -1,7 +1,7 @@
 
 import OpenAI from "openai";
 
-const API_KEY = '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';
+const API_KEY = process.env.API_KEY_OPEN_AI
 
 const openai = new OpenAI({
     apiKey: API_KEY,
