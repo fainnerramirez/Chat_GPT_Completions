@@ -12,6 +12,6 @@ Documentación de la API:  [chat_completions_api](https://platform.openai.com/do
 
 * Construido en React js
 * Sistema UI: Chakra UI
-* Autenticación con Firebase
+* Autenticación con Firebase (está en proceso)
 
 ### Autor - Fainner Ramirez 😎

@@ -1,9 +1,11 @@
-import { Box, Button, Input, Textarea, VStack, Text } from '@chakra-ui/react'
+import { Box, Button, Input, Textarea, VStack, Text, HStack } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import { BiSolidDownload } from "react-icons/bi";
 import { getResponseQuestion } from '../openai/api';
 import ChatToPDF from './TextToPDF.js';
 import { CreatePdf } from './TextToPDF.js';
+import { MdStarBorder } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
 
 const ChatCompletion = () => {
 
@@ -37,9 +39,10 @@ const ChatCompletion = () => {
     return (
         <Box height={'100vh'}>
             <VStack spacing={5}>
-                <Box>
+                <HStack spacing={5}>
                     <Button rightIcon={<BiSolidDownload />} colorScheme='blue' onClick={handleChatToPDF}>Descargar como PDF</Button>
-                </Box>
+                    <Button as="a" href='https://github.com/fainnerramirez/Chat_GPT_Completions' target='_blank' leftIcon={<FaGithub />} rightIcon={<MdStarBorder />}>Estrellas en Github</Button>
+                </HStack>
                 <Box width={'50%'} margin={'auto'}>
                     <Textarea
                         fontWeight={'bold'}
@@ -48,7 +51,7 @@ const ChatCompletion = () => {
                         borderRadius={10}
                         rows={20}
                         value={response}
-                        placeholder='Hecho por Fainner Ramirez 😎'
+                        placeholder='👉 Fainner Ramirez estuvo aquí 👈'
                         _placeholder={{ opacity: 1, color: 'green.500', textAlign: 'center' }}
                         place
                         size='lg'
