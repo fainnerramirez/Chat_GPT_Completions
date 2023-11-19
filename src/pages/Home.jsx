@@ -4,16 +4,15 @@ import { Box, Text } from '@chakra-ui/react'
 
 const Home = () => {
     return (
-        <Box>
+        <Box bg={'#EFEAD8'}>
             <Text
-                mt={20}
+                p={10}
                 textAlign={'center'}
-                bgGradient='linear(to-l, #7928CA, #FF0080)'
-                bgClip='text'
                 fontSize='6xl'
                 fontWeight='extrabold'
+                color={'#6D8B74'}
             >
-                Bienvenido a Chat-Fainner
+                Bienvenido a ChatFay
             </Text>
             <ChatCompletion />
         </Box>
