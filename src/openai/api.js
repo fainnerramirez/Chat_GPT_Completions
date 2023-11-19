@@ -12,7 +12,7 @@ export const getResponseQuestion = async (question) => {
 
     const completion = await openai.chat.completions.create({
         model: "gpt-3.5-turbo",
-        max_tokens: 1000,
+        max_tokens: 400,
         messages: [
             { "role": "system", "content": "Eres un asistente útil que responde de manera elegante, detallada y muy amigable " },
             { "role": "user", "content": question }
