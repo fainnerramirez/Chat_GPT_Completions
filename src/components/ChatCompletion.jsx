@@ -2,7 +2,6 @@ import { Box, Button, Input, Textarea, VStack, Text, HStack } from '@chakra-ui/r
 import React, { useEffect, useState } from 'react'
 import { BiSolidDownload } from "react-icons/bi";
 import { getResponseQuestion } from '../openai/api';
-import ChatToPDF from './TextToPDF.js';
 import { CreatePdf } from './TextToPDF.js';
 import { MdStarBorder } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";

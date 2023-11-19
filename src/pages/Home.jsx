@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <Box bg={'#EFEAD8'}>
             <Text
-                p={10}
+                p={{base: 5, lg: 10}}
                 textAlign={'center'}
                 fontSize={{base: '3xl', lg: '6xl'}}
                 fontWeight='extrabold'
