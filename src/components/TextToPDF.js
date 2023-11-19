@@ -7,7 +7,7 @@ export const CreatePdf = (texts) => {
     const content = texts.split("\n");
 
     const documentDefinition = {
-        content: [...content, 'Generado por ChatiFy'],
+        content: [...content, 'Generado por Chatify'],
     };
 
     pdfMake.createPdf(documentDefinition).open();
