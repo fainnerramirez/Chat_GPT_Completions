@@ -8,7 +8,7 @@ const Home = () => {
             <Text
                 p={10}
                 textAlign={'center'}
-                fontSize='6xl'
+                fontSize={{base: '3xl', lg: '6xl'}}
                 fontWeight='extrabold'
                 color={'#6D8B74'}
             >
