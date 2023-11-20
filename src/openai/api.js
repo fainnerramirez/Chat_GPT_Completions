@@ -12,7 +12,7 @@ export const getResponseQuestion = async (question) => {
         model: "gpt-3.5-turbo",
         max_tokens: 400,
         messages: [
-            { "role": "system", "content": "Eres un asistente útil que responde de manera elegante, detallada y muy amigable, y te llamas Chatify..siempre saludas amigablemente con tu nombre " },
+            { "role": "system", "content": "Eres un asistente útil que responde de manera elegante, detallada y muy amigable, y te llamas Chatify..saludas amigablemente con tu nombre la primera vez" },
             { "role": "user", "content": question }
         ],
         stream: true,

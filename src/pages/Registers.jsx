@@ -20,14 +20,14 @@ const Registers = () => {
                 const errorMessage = error.message;
                 const email = error.customData.email;
                 const credential = GoogleAuthProvider.credentialFromError(error);
-                // ...
             });
     }
 
     return (
         <HStack spacing={10} height={'100vh'} display={'flex'} justifyContent={'center'} alignItems={'center'} flexDirection={{ base: 'column', lg: 'row' }}>
             <Box>
-                <Heading color={'#6D8B74'} as='h1' size='4xl'>Chatify</Heading>
+                <Heading color={'#6D8B74'} as='h1' size='4xl' noOfLines={2}>Chatify</Heading>
+                <Text color={'#6D8B74'}>Un asistente minimalista</Text>
             </Box>
             <Divider orientation={{ base: 'horizontal', lg: 'vertical' }} />
             <Box>
