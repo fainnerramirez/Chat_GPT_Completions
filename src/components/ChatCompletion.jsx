@@ -11,6 +11,16 @@ const ChatCompletion = () => {
     const [response, setResponse] = useState("");
     const [question, setQuestion] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
+    const [user, setUser] = useState(null);
+
+    useEffect(() => {
+        const getNameUser = () => {
+            let user = sessionStorage.getItem("user") || null;
+            let userdata = user ? JSON.parse(user) : null;
+            setUser(userdata)
+        }
+        getNameUser();
+    }, [])
 
     const handleResponseQuestion = async () => {
         setIsLoading(true);
@@ -50,7 +60,7 @@ const ChatCompletion = () => {
                         borderRadius={10}
                         rows={20}
                         value={response}
-                        placeholder='👉 Fainner Ramirez estuvo aquí 👈'
+                        placeholder={'¡Hola ' + user?.name + '!.'+ ' haz cualquier pregunta!'}
                         _placeholder={{ opacity: 1, color: 'green.500', textAlign: 'center' }}
                         place
                         size='lg'

@@ -14,6 +14,14 @@ const Registers = () => {
                 const credential = GoogleAuthProvider.credentialFromResult(result);
                 const token = credential.accessToken;
                 const user = result.user;
+                console.log("User google: ", user)
+
+                let userData = {
+                    name: user.displayName,
+                    email: user.email,
+                    photo: user.photoURL
+                }
+                sessionStorage.setItem("user", JSON.stringify(userData));
                 window.location.href = "/app"
             }).catch((error) => {
                 const errorCode = error.code;

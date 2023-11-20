@@ -1,14 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ChatCompletion from '../components/ChatCompletion'
 import { Box, Text } from '@chakra-ui/react'
 
 const Home = () => {
+
     return (
         <Box bg={'#EFEAD8'}>
             <Text
-                p={{base: 5, lg: 10}}
+                p={{ base: 5, lg: 10 }}
                 textAlign={'center'}
-                fontSize={{base: '3xl', lg: '6xl'}}
+                fontSize={{ base: '3xl', lg: '6xl' }}
                 fontWeight='extrabold'
                 color={'#6D8B74'}
             >
