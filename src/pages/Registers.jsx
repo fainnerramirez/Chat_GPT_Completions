@@ -35,7 +35,7 @@ const Registers = () => {
         <HStack spacing={10} height={'100vh'} display={'flex'} justifyContent={'center'} alignItems={'center'} flexDirection={{ base: 'column', lg: 'row' }}>
             <Box>
                 <Heading color={'#6D8B74'} as='h1' size='4xl' noOfLines={2}>Chatify</Heading>
-                <Text color={'#6D8B74'}>Un asistente minimalista</Text>
+                <Text color={'#6D8B74'}>Un asistente IA minimalista</Text>
             </Box>
             <Divider orientation={{ base: 'horizontal', lg: 'vertical' }} />
             <Box>
