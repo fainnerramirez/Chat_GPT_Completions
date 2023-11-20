@@ -14,13 +14,13 @@ const Registers = () => {
                 const credential = GoogleAuthProvider.credentialFromResult(result);
                 const token = credential.accessToken;
                 const user = result.user;
-                console.log("User google: ", user)
 
                 let userData = {
                     name: user.displayName,
                     email: user.email,
                     photo: user.photoURL
                 }
+
                 sessionStorage.setItem("user", JSON.stringify(userData));
                 window.location.href = "/app"
             }).catch((error) => {
@@ -37,7 +37,7 @@ const Registers = () => {
                 <Heading color={'#6D8B74'} as='h1' size='4xl' noOfLines={2}>Chatify</Heading>
                 <Text color={'#6D8B74'}>Un asistente IA minimalista</Text>
             </Box>
-            <Divider orientation={{ base: 'horizontal', lg: 'vertical' }} />
+            <Divider orientation='vertical' display={{base: 'none', lg: 'block'}}/>
             <Box>
                 <Text pt={5} pb={5} fontSize={'20px'} fontWeight={'bold'} textAlign={{ base: 'center', lg: 'left' }}>¡Explóralo hoy!</Text>
                 <Button leftIcon={<FcGoogle />} variant={'outline'} colorScheme='blue' onClick={handleGoogle}>Ingresa con Google</Button>
